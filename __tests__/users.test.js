@@ -2,6 +2,8 @@ const db = require("../db");
 const User = require("../models/user");
 const Message = require("../models/message");
 
+// use small value here so tests are fast
+const BCRYPT_WORK_FACTOR = 1;
 
 describe("Test User class", function () {
   beforeEach(async function () {
